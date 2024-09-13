@@ -1,9 +1,14 @@
+import base64
+import sys
+import time
 import random
 import base58
 import ecdsa
 import requests
 from Crypto.Hash import keccak
 from rich import print
+import subprocess
+import os
 import time
 
 def keccak256(data):
@@ -43,6 +48,7 @@ while True:
 	print('[red1]Total Scan : [/][b blue]' + str(z) + '[/]')
 	print('[gold1]Address:     [/]' + addr + '           Balance: ', bal)
 	print('[gold1]Address(hex):[/]' + base58.b58decode_check(addr.encode()).hex())
+	# print('Public Key:  ', key.get_verifying_key().to_string().hex())
 	print('[gold1]Private Key: [/][red1]' + raw.hex() + '[/]\n')
 
 	if float(bal) > 0:
@@ -54,3 +60,4 @@ while True:
 		f.close()
 	else:
 		z += 1
+		###
