@@ -1,3 +1,5 @@
+#!/bin/sh
+
 import base64
 import sys
 import time
