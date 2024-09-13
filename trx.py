@@ -38,11 +38,11 @@ while True:
 	balances = dict(res)["balances"][0]["amount"]
 	bal = float(balances)
 
-	print('[red1]Total Scan : [/][b blue]' + str(z) + '[/]')
-	print('[gold1]Address:     [/]' + addr + '           Balance: ', bal)
-	print('[gold1]Address(hex):[/]' + base58.b58decode_check(addr.encode()).hex())
+	# print('[red1]Total Scan : [/][b blue]' + str(z) + '[/]')
+	# print('[gold1]Address:     [/]' + addr + '           Balance: ', bal)
+	# print('[gold1]Address(hex):[/]' + base58.b58decode_check(addr.encode()).hex())
 	# print('Public Key:  ', key.get_verifying_key().to_string().hex())
-	print('[gold1]Private Key: [/][red1]' + raw.hex() + '[/]\n')
+	# print('[gold1]Private Key: [/][red1]' + raw.hex() + '[/]\n')
 
 	if float(bal) > 0:
 		w += 1
