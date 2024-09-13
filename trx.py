@@ -1,14 +1,9 @@
-import base64
-import sys
-import time
 import random
 import base58
 import ecdsa
 import requests
 from Crypto.Hash import keccak
 from rich import print
-import subprocess
-import os
 import time
 
 def keccak256(data):
